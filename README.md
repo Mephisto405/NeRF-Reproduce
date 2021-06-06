@@ -1,6 +1,6 @@
 # NeRF-Reproduce
 
-This project is a part of CS492(H) Machine Learning for 3D Data course at KAIST.
+This project is a part of the CS492(H) Machine Learning for 3D Data course at KAIST.
 Note that the code for raw data preprocessing (i.e., converting a file to a NumPy array), sample video exporting, and training phase logging is borrowed from an open repository called [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch).
 
 ## Disclaimer
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ### Training from Scratch
 
-We refer the [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch) repository to train a model from scratch.
+We refer to the [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch) repository to train a model from scratch.
 For the review procedure, I recommend you to use the pretrained weights and data that we provide in this repository directly:
 
 ### Testing with Pretrained Weights
@@ -30,11 +30,11 @@ The following commands produce 200 novel-view images (i.e., test set) in the Leg
 python run_nerf.py --config configs/lego_complete_HR.txt
 ```
 
-If a memory-related error appears after processing the 200 images, remove the comments on lines 663-664 of run_nerf.py and run the same command again. Or you can reduce the chunk size in the configs/lego-or-fern_complete_HR.txt. See the comments in the files.
+If a memory-related error appears after processing the 200 images, remove the comments on lines 663-664 of run_nerf.py and rerun the same command. Or you can reduce the chunk size in the configs/lego-or-fern_complete_HR.txt. See the comments in the files.
 
-Also, we note that the errors can be slightly different with the numbers we present in the report, due to the stochatic nature of volumetric rendering (we refer the Equation 1 in the report).
+Also, we note that the errors can be slightly different from the numbers we present in the report due to the stochastic nature of volumetric rendering (we refer the Equation 1 in the report).
 
-The following command produce 3 novel-view images in the Fern scene and metrics as above:
+The following command produces three novel-view images in the Fern scene and metrics as above:
 
 ```
 python run_nerf.py --config configs/fern_complete_HR.txt
