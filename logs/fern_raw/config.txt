@@ -1,0 +1,19 @@
+expname = fern_raw
+basedir = ./logs
+datadir = ./data/nerf_llff_data/fern
+dataset_type = llff
+
+factor = 8
+llffhold = 8
+N_rand = 1024
+raw_noise_std = 1e0
+
+use_viewdirs = False
+N_samples = 128
+N_importance = 0
+i_embed = -1
+
+##########
+render_only = True
+render_test = True
+chunk = 16384
