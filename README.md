@@ -3,6 +3,10 @@
 This project is a part of CS492(H) Machine Learning for 3D Data course at KAIST.
 Note that the code for raw data preprocessing (i.e., converting a file to a NumPy array), sample video exporting, and training phase logging is borrowed from an open repository called [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch).
 
+## Disclaimer
+
+Note that the awesome contributors on the right side are not relevant to this term project :). They are contributors to the nerf-pytorch repository and appear in the right tab due to repository forking.
+
 ## Installation
 
 ```
